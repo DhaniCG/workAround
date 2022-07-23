@@ -54,10 +54,10 @@ function updateResults(){
   if (!company || !role) { return; }
 
   // TODO: Use the workAroundModule functions to calculate the needed data.
-  const averageSalaryByRole = getAverageSalaryByRole(role);
-  const averageSalaryByCompany = getAverageSalaryByCompany(company);
-  const salary = getSalaryAtCompany(role, company);
-  const industryAverageSalary = getIndustryAverageSalary();
+  const averageSalaryByRole = getAverageSalaryByRole(role); // ganti value jadi 0 (angka atau string terserah)
+  const averageSalaryByCompany = getAverageSalaryByCompany(company); // ganti value jadi 0 (angka atau string terserah)
+  const salary = getSalaryAtCompany(role, company); // ganti value jadi 0 (angka atau string terserah)
+  const industryAverageSalary = getIndustryAverageSalary(); // ganti value jadi 0 (angka atau string terserah)
 
   // Render them to the screen.
   document.getElementById('salarySelected').innerText = `The salary for ${role}s at ${company} is \$${salary}`;
